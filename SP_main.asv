@@ -29,6 +29,7 @@ time(1) = 0;
 U(1)    = 0;
 
 % ----------------------- Physical Parameters ------------------------------
+% (Moved from 'global' to a params struct)
 params.g = 9.8;     % gravity (m/s^2)
 params.m = 0.5;     % mass (kg)
 params.l = 0.3;     % length (m)
@@ -54,6 +55,7 @@ for k = 1:N
     [fx, gx] = SP(x(:,k), params);
 
     % Desired post-update velocity (target for LPC):
+    %   theta_dot^{+} = -K * (theta - ref)
     e     = x(1,k) - ref(k);
     dxhat = -K * e;
 

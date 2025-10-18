@@ -1,14 +1,12 @@
-function [fx,gx]=RP(x)
+function [fx,gx]=RP(x,params)
 %% Coefficients
-a=0.5;
-J1=0.0833;
-J2=0.0017;
-miu=1;
-M=0.5;
+a   = params.a;
+J1  = params.J1;
+J2  = params.J2;
+miu = params.miu;
+M   = params.M;
 
 %% Outputs
-%d1 = 0*0.3*sin(2*((k-1)*dt))*exp(-0.2*((k-1)*dt));
-%d2 = 0*0.4*cos(2*((k-1)*dt))*exp(-0.2*((k-1)*dt));
 fx = [x(2);
     ((miu*x(1)+M*(x(1)+a))*(x(4)^2))/(miu+M)
     x(4)

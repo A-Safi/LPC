@@ -1,6 +1,9 @@
-function [fx,gx]=SP(x)
+function [fx,gx]=SP(x,params)
 %% Coefficients
-global m  g l c
+m = params.m;
+g = params.g;
+l = params.l;
+c = params.c;
 
 %% Outputs
 fx=[x(2);...
