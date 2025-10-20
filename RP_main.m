@@ -51,10 +51,10 @@ tmin  = 0.05;            % min sampling time (s)
 tmax  = 0.1;             % max sampling time (s)
 
 % Quick sanity checks (optional)
-eig(K1);
-eig(eye(2) + K2);
-eig(inv(eye(2) + K2) * K1);
-
+eig(K1)
+eig(eye(2) + K2)
+eig(inv(eye(2) + K2) * K1)
+%%
 % ----------------------- References ---------------------------------------
 ref_r     = [zeros(1,100),  ones(1,200), -ones(1,500)];   % r (m)
 ref_theta = [zeros(1,200), (pi/4)*ones(1,500)];           % theta (rad)

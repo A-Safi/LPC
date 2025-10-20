@@ -59,9 +59,9 @@ tmax = 0.02;        % Maximum sampling period (s)
 
 % --- Quick eigenvalue checks (stability verification) ---
 eig(K1)               % Eigenvalues of K1 (desired dynamics)
-eig(eye(2)+K1)        % Eigenvalues of I+K1
+eig(eye(2)+K2)        % Eigenvalues of I+K2
 eig(inv(eye(2)+K2)*K1)% Eigenvalues of (I+K2)^(-1)*K1
-
+%%
 % --- Reference signal (step command for α = π/4 after 100 samples) ---
 ref = [0*ones(1,100), pi/4*ones(1,201)];
 
