@@ -37,7 +37,6 @@ LPC was conceptually inspired by the *Fine-Tuner* section of the authors’ prev
 
 Clone the repository:
 
-```bash
 git clone https://github.com/A-Safi/LPC.git
 cd LPC
 
