@@ -41,7 +41,7 @@ git clone https://github.com/A-Safi/LPC.git
 cd LPC
 
 ### Rotary Inverted Pendulum (RIP) — LPC Demo
-Run `rip_lpc_demo.m` to reproduce the LPC results on the RIP benchmark with adaptive sampling.
+Run `IP_Main.m` to reproduce the LPC results on the RIP benchmark with adaptive sampling.
 - Constraints: $\dot{\alpha}, \dot{\theta} \in [-5,5]$ rad/s, $u \in [-1.2,1.2]$ N·m
 - Sampling: $t \in [0.01, 0.02]$ s (adaptive)
 - Plots: states, input torque, and sampling interval
